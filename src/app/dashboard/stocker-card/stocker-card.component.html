@@ -1,0 +1,15 @@
+<div class="stock-card-conteiner" [class.negative-variation] = "stock.variation < 0">
+  <div class="stock-info-conteiner">
+
+    <h2>{{stock.name}}</h2>
+    <p>{{stock.date}}</p>
+
+
+  </div>
+
+  <div class="stock-value-conteiner">
+    <span class="value">{{stock.price | currency: 'BRL'}}</span>
+    <span class="variation" [class.negative-variation-background] = "stock.variation < 0"> {{stock.variation.toLocaleString()}}%</span>
+  </div>
+
+</div>

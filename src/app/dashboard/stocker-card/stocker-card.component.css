@@ -1,0 +1,82 @@
+.stock-card-conteiner{
+  width: 342px;
+  height: 221px;
+  margin: 1rem;
+  background-color: var(--secundary-color);
+  padding: 1rem;
+  border-radius: 4px;
+  border-left:solid var(--positive-variation-color) 4px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 8px 2px rgba(0, 0, 0, 0.24);
+
+  transition: all 0.3s cubic-bezier(0.25,.8,.25,1) ;
+}
+
+.stock-card-conteiner:hover{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.10), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.negative-variation{
+  border-left-color:var(--negative-variation-color);
+}
+
+
+
+.stock-info-conteiner{
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stock-info-conteiner h2,p{
+  margin: 0%;
+
+}
+
+.stock-info-conteiner h2{
+  color: var(--text-color);
+}
+
+.stock-info-conteiner p{
+  color: var(--text-color-light);
+
+}
+
+
+
+.stock-value-conteiner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+}
+
+.stock-value-conteiner .value{
+  font-size: 3rem;
+  color: var(--text-color);
+
+}
+
+
+.stock-value-conteiner .variation{
+  background-color: var(--positive-variation-color);
+  color: var(--secundary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.2rem;
+  align-self: flex-end;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+
+}
+
+.stock-value-conteiner .negative-variation-background{
+  background-color: var(--negative-variation-color);
+}
